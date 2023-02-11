@@ -17,8 +17,8 @@ jobs:
       with:
         dotnet-version: 2.2
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore One/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
     - name: Build
-      run: dotnet build --configuration Release --no-restore
+      run: dotnet build --configuration Release --no-restore One/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
     - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      run: dotnet test --no-restore --verbosity normal One/Application/src/RazorPagesTestSample/RazorPagesTestSample.csproj
